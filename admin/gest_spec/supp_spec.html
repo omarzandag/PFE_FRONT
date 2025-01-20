@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>supprimer employee</title>
+    <link rel="stylesheet" href="../style_admin.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Supprimer une specilaite</h1>
+        <nav>
+            <a href="../Acceuill_adm.html">Acceuill</a>
+            <div class="user-container">
+                <i id="user_icon" class="fa fa-user"></i>
+                <ul id="user_list">
+                  <li><a href="../../login.html">Déconnexion</a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+
+    <div class="supp_box">
+        <label for="emp_id"></label>
+        <input type="text" name="emp_id" id="emp_id" placeholder="Entrer le id de specilaite">
+        <button type="submit" onclick="validateForm()">Supprimer</button>
+    </div>
+
+
+
+<script>
+    function validateForm() {
+        // Get all input fields within the form
+        const inputs = document.querySelectorAll('input');
+        let allFilled = true;
+
+        // Loop through each input to check if it's empty
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                allFilled = false;
+            }
+        });
+
+        // Show alert if any field is empty
+        if (!allFilled) {
+            alert('Veuillez remplir tous les champs avant de valider.');
+        } else {
+        }
+    }
+</script>
+<script src="../user_icon.js"></script>
+
+</body>
+</script>
+<style>
+#emp_id{
+    margin-left: 10px;
+    font-size: 20px;
+    width: 20%;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.c1 {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+margin-left: 530px;
+border: 1px solid black;
+border-radius: 10px;
+width: 500px;
+}
+.table ul {
+list-style-type: none;
+padding: 0;
+}
+.table li {
+margin-bottom: 15px;
+display: flex;
+align-items: center;
+}
+.table label {
+width: 150px;
+font-weight: bold;
+}
+.table input {
+flex: 1;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.btn-container {
+text-align: center;
+margin-top: 20px;
+}
+.btn-container button {
+background-color: #007BFF;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+.btn-container button:hover {
+background-color: #0056b3;
+}
+
+.supp_box input{
+    width: 60%;
+    height: 60px;
+    border-radius: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    display: block;margin-bottom: 10px;
+}
+.supp_box button{
+    width: 10%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: transparent;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+.supp_box button:hover{
+    cursor: pointer;
+    border: white;
+}
+
+</style>
+
+
+</html>

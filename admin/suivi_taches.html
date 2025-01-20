@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style_admin.css">
+    <title>Suivi les taches</title>
+</head>
+<body>
+    <header>
+        <h2>Suivi les Taches</h2>
+        <nav>
+          <a href="Acceuill_adm.html">Acceuill</a>
+          <a href="actualites.html">Actualites</a>
+          <a href="suivi_taches.html">Suivi les taches</a>
+          <a href="commentaire.html">Commentaires</a>
+          <div class="user-container">
+            <i id="user_icon" class="fa fa-user"></i>
+            <ul id="user_list">
+              <li><a href="infos.html">Information Personnel</a></li>
+              <li><a href="../login.html">Déconnexion</a></li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+<div id="search">
+    <label for="id_emp">Entrer le id d'employe : </label>
+    <input type="text" name="id_emp" id="id_emp" placeholder="id de l'Employe">
+    <button type="button">Suivi</button>
+</div>
+
+
+
+
+    <style>
+  #search input{
+    display: block;
+    justify-content: center;
+    width: 28%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  #search button{   
+    display: block;
+    justify-content: center;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #e60000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    </style>
+    <script src="user_icon.js"></script>
+
+
+
+    </style>
+</body>
+</html>

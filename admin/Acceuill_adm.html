@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Acceuill</title>
+    <link rel="stylesheet" href="style_admin.css">
+</head>
+<body>
+    <header>
+        <h2>Acceuill</h2>
+        <nav>
+            <div class="user-container">
+                <i id="user_icon" class="fa fa-user"></i>
+                <ul id="user_list">
+                    
+                    <li><a href="infos.html">Information Personnel</a></li>
+                  <li><a href="../login.html">Déconnexion</a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+
+   <div class="buttons">
+    <a href="actualites.html"><button>actualités</button></a>
+    <a href="suivi_taches.html"><button>Suivi Les Taches Des Employées</button></a>
+    <div>
+    <button id="gest_emps">Gestion Des Employees</button>
+        <ul id="list_gest_emps">
+        <a href="gest_emp/ajoute_emp.html"><li>ajouter</li></a>
+        <a href="gest_emp/edit_emp.html"><li>Modifeir</li></a>
+        <a href="gest_emp/supp_emp.html"><li>Supprimer</li></a>
+        </ul>
+    </div>
+    <div>
+        <button id="gest_spec">Gestion Des Spécialité</button>
+            <ul id="list_gest_spec">
+            <a href="gest_spec/ajoute_spec.html"><li>ajouter</li></a>
+            <a href="gest_spec/edit_spec.html"><li>Modifeir</li></a>
+            <a href="gest_spec/supp_spec.html"><li>Supprimer</li></a>
+            </ul>
+        </div>
+    <a href="commentaire.html"><button>Ajouter un commentaire</button></a>
+   </div>
+
+    
+   <script src="user_icon.js"></script>
+</body>
+</html>

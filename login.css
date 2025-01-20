@@ -1,0 +1,65 @@
+
+  header{
+    background-color: #E11303;        /* Red background for the header */
+    color: white;                /* White text color */
+    text-align: center;          /* Center-align the text */
+    padding: 20px;               /* Add smooth padding inside the header */
+    font-size: 24px;             /* Larger font size for visibility */
+    font-family: Arial, sans-serif; /* Clean font for better readability */
+    border-radius: 8px;          /* Rounded corners for smoothness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  }
+  
+  .login-panel {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    background-color: #ffffff; /* White background */
+    text-align: center; /* Center content */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  .login-panel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  .login-panel input[type="text"],
+  .login-panel input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+}
+  /* Button styling */
+  .login-panel button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e60000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-panel button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+  }
+
+  

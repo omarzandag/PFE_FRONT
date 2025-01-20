@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style_emp.css">
+    <title>Marquer L'absence</title>
+
+</head>
+<body>
+    <header>
+        <h2>Marquer L'absence</h2>
+        <nav> 
+          <a href="acceuil_emp.html">acceuil</a>
+          <a href="absence.html">absence</a>
+          <a href="taches.html">taches</a>
+          <a href="commentaire.html">commentaires</a>
+          <div class="user-container">
+          <i id="user_icon" class="fa fa-user"></i>
+          <ul id="user_list">
+            <li><a href="infos.html">Informations personelles</a></li>
+            <li><a href="../login.html">Déconnexion</a></li>
+          </ul>
+        </div>
+        </nav>
+    </header>
+    
+    <div id="date"></div>
+    <script>
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleString();
+        document.getElementById('date').textContent = formattedDate;
+    </script>
+    <button id="validation"><h3>Valider la présence</h3></button>
+    
+
+
+    
+
+
+
+
+
+
+    <style>
+
+#date{
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+  #validation{
+    margin-left: 35%;
+    display: block;
+    justify-content: center;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #e60000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+
+  #validation:hover{
+    text-decoration: underline;
+  }
+  
+    </style>
+    <script src="user_icon.js"></script>
+</body>
+</html>

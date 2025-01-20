@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../style_admin.css">
+    <title>Ajoute emp</title>
+</head>
+<body>
+    <header>
+        <h2>ajouter une specilaite </h2>
+        <nav>
+            <a href="../Acceuill_adm.html">Acceuill</a>
+            <div class="user-container">
+                <i id="user_icon" class="fa fa-user"></i>
+                <ul id="user_list">
+                  <li><a href="../../login.html">Déconnexion</a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+
+    <div class="c1">
+      <div class="table">
+          <ul>
+              <li id="i1">
+                  <label for="id">ID :</label>
+                  <input type="text" id="id" name="id" placeholder="Entrez l'ID">
+              </li>
+              <li id="i2">
+                  <label for="nom">Nom  :</label>
+                  <input type="text" id="nom" name="nom" placeholder="Entrez le nom ">
+              </li>
+              <li id="i3">
+                  <label for="prenom">nombre maximal des Employees :</label>
+                  <input type="text" id="prenom" name="prenom" placeholder="Entrez le nombre">
+          </ul>
+          <div class="btn-container">
+            <button type="button" onclick="validateForm()">Valider</button>
+        </div>
+      </div>
+  </div>
+
+<script>
+  function validateForm() {
+      // Get all input fields within the form
+      const inputs = document.querySelectorAll('.table input');
+      let allFilled = true;
+      // Loop through each input to check if it's empty
+      inputs.forEach(input => {
+          if (!input.value.trim()) {
+              allFilled = false;
+          }
+      });
+      // Show alert if any field is empty
+      if (!allFilled) {
+          alert('Veuillez remplir tous les champs avant de valider.');
+      } else {
+      }
+  }
+</script>
+<script src="../user_icon.js"></script>
+
+  <style>
+    .c1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 530px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 500px;
+}
+.table ul {
+    list-style-type: none;
+    padding: 0;
+}
+.table li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.table label {
+    width: 150px;
+    font-weight: bold;
+}
+.table input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.btn-container button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-container button:hover {
+    background-color: #0056b3;
+}
+  </style>
+    
+<script src="../user_icon.js"></script>
+
+</body>
+</html>

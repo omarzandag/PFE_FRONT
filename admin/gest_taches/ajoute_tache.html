@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../style_admin.css">
-    <title>Ajoute specialite</title>
+    <title>Ajoute une tache</title>
 </head>
 <body>
     <header>
-        <h2>ajouter une specilaite </h2>
+        <h2>ajouter une Tache </h2>
         <nav>
             <a href="../Acceuill_adm.html">Acceuill</a>
             <div class="user-container">
@@ -29,12 +29,17 @@
                   <input type="text" id="id" name="id" placeholder="Entrez l'ID">
               </li>
               <li id="i2">
-                  <label for="nom">Nom  :</label>
-                  <input type="text" id="nom" name="nom" placeholder="Entrez le nom ">
+                  <label for="nom">Titre :</label>
+                  <input type="text" id="nom" name="nom" placeholder="Entrez le titre ">
               </li>
               <li id="i3">
-                  <label for="prenom">nombre maximal des Employees :</label>
-                  <input type="text" id="prenom" name="prenom" placeholder="Entrez le nombre">
+                  <label for="prenom">Description :</label>
+                  <input type="text" id="prenom" name="prenom" placeholder="Entrez la description">
+                </li>
+                <li id="i4">
+                    <label for="prenom">id EMPLOYE :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez le id de employe">
+                  </li>
           </ul>
           <div class="btn-container">
             <button type="button" onclick="validateForm()">Valider</button>
